@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Jabbar - Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Abdul Jabbar</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#help" class="nav-link">Help Center</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Hello, I'm <span class="highlight">Abdul Jabbar</span></h1>
+            <p class="hero-subtitle">Creative Developer & Designer | Crafting Digital Experiences</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('#projects')">View My Work</button>
+                <button class="btn btn-secondary" onclick="scrollToSection('#contact')">Get in Touch</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="image-placeholder">
+                <img src="images/abdul.jpeg" alt="Abdul Jabbar" class="profile-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate developer and designer dedicated to creating beautiful and functional digital solutions. With a keen eye for design and strong technical skills, I transform ideas into reality.</p>
+                    <p>My journey in tech has been driven by curiosity and a desire to solve real-world problems. I love collaborating with teams and bringing creative visions to life through code and design.</p>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <h3>50+</h3>
+                            <p>Projects</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>30+</h3>
+                            <p>Clients</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>3+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-box">
+                        <img src="images/myimage.png" alt="My Image" class="about-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="skill-title">Frontend Development</h3>
+                    <ul class="skill-list">
+                        <li><span class="skill-dot"></span>HTML5 & CSS3</li>
+                        <li><span class="skill-dot"></span>JavaScript (ES6+)</li>
+                        <li><span class="skill-dot"></span>Responsive Design</li>
+                        <li><span class="skill-dot"></span>UI/UX Design</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-title">Backend Development</h3>
+                    <ul class="skill-list">
+                        <li><span class="skill-dot"></span>Node.js</li>
+                        <li><span class="skill-dot"></span>Database Design</li>
+                        <li><span class="skill-dot"></span>API Development</li>
+                        <li><span class="skill-dot"></span>Server Management</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-title">Tools & Frameworks</h3>
+                    <ul class="skill-list">
+                        <li><span class="skill-dot"></span>React & Vue.js</li>
+                        <li><span class="skill-dot"></span>Git & GitHub</li>
+                        <li><span class="skill-dot"></span>Figma Design</li>
+                        <li><span class="skill-dot"></span>Web Performance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Help Center Section -->
+    <section id="help" class="help">
+        <div class="container">
+            <h2 class="section-title">Help Center</h2>
+            <div class="help-content">
+                <div class="help-grid">
+                    <div class="help-card" onclick="handleHelpClick('problem')" role="button" tabindex="0">
+                        <h3>Having a problem?</h3>
+                        <p>Click here for troubleshooting, bug reports, or technical support.</p>
+                        <button class="btn btn-secondary btn-small">Need help</button>
+                    </div>
+                    <div class="help-card" onclick="handleHelpClick('question')" role="button" tabindex="0">
+                        <h3>Have a question?</h3>
+                        <p>Click here to ask about my work, services, or availability.</p>
+                        <button class="btn btn-secondary btn-small">Ask a question</button>
+                    </div>
+                </div>
+                <div class="help-info">
+                    <p>If you’re stuck or want more details, I’m here to help. Use these quick options or scroll down to contact me directly.</p>
+                    <button class="btn btn-primary" onclick="scrollToSection('#contact')">Contact Support</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p><a href="mailto:abduljabbaribrahim0@icloud.com">abduljabbaribrahim0@icloud.com</a></p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p><a href="tel:+2347038731495">+2347038731495</a></p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Location</h3>
+                        <p>11 Oadunmi Ayandipo Street</p>
+                    </div>
+                </div>
+                <form class="contact-form" onsubmit="handleFormSubmit(event)">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Links -->
+    <div class="social-icons">
+        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Abdul Jabbar. All rights reserved.</p>
+            <p>Designed & Built by Abdul Jabbar</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
